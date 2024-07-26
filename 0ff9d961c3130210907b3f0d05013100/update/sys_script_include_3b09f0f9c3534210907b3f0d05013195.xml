@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1465873_sifydemo.SifyEmployee</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>SifyEmployee</name>
+        <script><![CDATA[var SifyEmployee = Class.create();
+SifyEmployee.prototype = {
+    initialize: function() {
+    },
+
+    insertEmployee: function(employee) {
+        // Create a new GlideRecord object for the x_1465873_sifydemo_sify_employees table
+        var gr = new GlideRecord('x_1465873_sifydemo_sify_employees');
+        gr.initialize();
+        gr.setValue('name', employee.name);
+        gr.setValue('gender', employee.gender);
+        gr.setValue('email', employee.email);
+        gr.setValue('designation', employee.designation);
+        gr.setValue('date_of_birth', employee.dateOfBirth);
+        gr.setValue('age', employee.age);
+
+        // Insert the record and get the sys_id of the new record
+        var sysid = gr.insert();
+
+		var employeeDetails = this.getEmployeeBySysId(sysid);
+
+        // Generate employee_id in the format SIFY0000001
+        var employeeId = employeeDetails.employee_id;
+
+        // Update the employee record with the generated employee_id
+        gr.setValue('employee_id', employeeId);
+        gr.update();
+
+        // Log the result
+        gs.info('New employee record inserted: ' + employee.name + ' with employee_id: ' + employeeId);
+
+        // Return the employee_id
+        return employeeId;
+    },
+
+	getEmployee: function(employee_id) {
+        var gr = new GlideRecord('x_1465873_sifydemo_sify_employees');
+        gr.addQuery('employee_id', employee_id);
+        gr.query();
+		gs.info(employee_id);
+        if (gr.next()) {
+			var result = {
+                name: gr.getValue('name'),
+                gender: gr.getValue('gender'),
+                email: gr.getValue('email'),
+                designation: gr.getValue('designation'),
+                dateOfBirth: gr.getValue('date_of_birth'),
+                age: gr.getValue('age')
+            };
+			gs.info(result);
+			this.response.setContentType('application/json');
+        return JSON.stringify(result);  
+        } else {
+            gs.info('No employee found with employee_id: ' + employeeId);
+            return JSON.stringify({ error: 'Employee not found' });
+        }
+    },
+
+	// Method to get an employee record based on sys_id
+    getEmployeeBySysId: function(sysId) {
+        var gr = new GlideRecord('x_1465873_sifydemo_sify_employees');
+        if (gr.get(sysId)) {
+            return gr; // Returns the GlideRecord object of the employee found by sys_id
+        } else {
+            gs.info('No employee found with sys_id: ' + sysId);
+            return null;
+        }
+    },
+
+    updateEmployee: function(employeeId, updateFields) {
+        var gr = this.getEmployee(employeeId);
+        if (gr) {
+            for (var field in updateFields) {
+                if (updateFields.hasOwnProperty(field)) {
+                    gr.setValue(field, updateFields[field]);
+                }
+            }
+            gr.update();
+            gs.info('Updated employee record with employee_id: ' + employeeId);
+        }
+    },
+
+    deleteEmployee: function(employeeId) {
+        var gr = this.getEmployee(employeeId);
+        if (gr) {
+            gr.deleteRecord();
+            gs.info('Deleted employee record with employee_id: ' + employeeId);
+        }
+    },
+
+    type: 'SifyEmployee'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-10 08:41:01</sys_created_on>
+        <sys_id>3b09f0f9c3534210907b3f0d05013195</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>SifyEmployee</sys_name>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name>sys_script_include_3b09f0f9c3534210907b3f0d05013195</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-11 08:49:45</sys_updated_on>
+    </sys_script_include>
+</record_update>

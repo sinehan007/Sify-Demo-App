@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_icon">
+    <sys_sg_icon action="INSERT_OR_UPDATE">
+        <icon>{"Name":"Home"}</icon>
+        <name>Home SifyDemoApp</name>
+        <sys_class_name>sys_sg_icon</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-09 16:32:05</sys_created_on>
+        <sys_id>bdbdd96dc3130210907b3f0d0501318d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Home SifyDemoApp</sys_name>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name>sys_sg_icon_bdbdd96dc3130210907b3f0d0501318d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-09 16:32:05</sys_updated_on>
+        <type>image</type>
+    </sys_sg_icon>
+</record_update>

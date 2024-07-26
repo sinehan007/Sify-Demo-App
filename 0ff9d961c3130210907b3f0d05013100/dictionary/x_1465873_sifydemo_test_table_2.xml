@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ec168dc2c3130210907b3f0d050131c1" label="Test Table 2" max_length="40" name="x_1465873_sifydemo_test_table_2" type="collection">
+        <element label="Name" max_length="50" name="name" type="string"/>
+        <element display="true" label="Email" mandatory="true" max_length="50" name="email" type="string"/>
+    </element>
+</database>

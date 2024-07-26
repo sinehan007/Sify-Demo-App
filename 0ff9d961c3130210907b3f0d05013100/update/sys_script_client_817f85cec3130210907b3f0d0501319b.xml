@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Test Client Script onLoad</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	// Clear existing messages
+    g_form.clearMessages();
+	var employeeId = "SIFY00000001";
+	// Call the function with the specific employeeId
+	getEmployeeDetails(employeeId);
+}
+
+
+function getEmployeeDetails(employeeId) {
+	// Create a GlideAjax object
+	var ga = new GlideAjax('SifyEmployeeTest');
+    ga.addParam('sysparm_name', 'getEmployee');
+    ga.addParam('sysparm_employee_id', employeeId);
+    ga.getXML(function(response) {
+        var employeeDetails = JSON.parse(response.responseXML.documentElement.getAttribute('answer'));
+		g_form.addInfoMessage(employeeDetails.designation);
+        if (employeeDetails.error) {
+            g_form.addErrorMessage(employeeDetails.error);
+        } else {
+            g_form.setValue('name', employeeDetails.name);
+            g_form.setValue('email', employeeDetails.email);
+			g_form.addFormMessage('Hi ' + employeeDetails.name + '!', 'info');
+        }
+    });
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-11 04:47:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>817f85cec3130210907b3f0d0501319b</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_name>Test Client Script onLoad</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name>sys_script_client_817f85cec3130210907b3f0d0501319b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-11 09:22:28</sys_updated_on>
+        <table>x_1465873_sifydemo_test_table</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1465873_sifydemo_sify_employees</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_1465873_sifydemo_sify_employees">designation=ServiceNow Developer^EQ<item endquery="false" field="designation" goto="false" newquery="false" operator="=" or="false" value="ServiceNow Developer"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Table Data on Change</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions>admin</role_conditions>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    // Check if the designation contains 'ServiceNow'
+    if (current.designation.indexOf('ServiceNow') !== -1) {
+        // Create a new GlideRecord object for the x_1465873_sifydemo_sify_servicenow table
+        var servicenowGr = new GlideRecord('x_1465873_sifydemo_sify_servicenow');
+        servicenowGr.addQuery('employee_id', current.employee_id);  // Query based on employee_id
+        servicenowGr.query();
+        if (servicenowGr.next()) {
+            // Update existing record
+            servicenowGr.setValue('name', current.name);  // Update the name from the current record
+            servicenowGr.setValue('email', current.email);  // Update the email from the current record
+            servicenowGr.update();  // Save the changes
+            gs.info('Updated employee record with Employee ID ' + current.employee_id + ' in x_1465873_sifydemo_sify_servicenow');
+        } else {
+            // Create a new record
+            servicenowGr.initialize();
+            servicenowGr.setValue('employee_id', current.employee_id);  // Set the employee_id from the current record
+            servicenowGr.setValue('name', current.name);  // Set the employee name from the current record
+            servicenowGr.setValue('email', current.email);  // Set the employee email from the current record
+            servicenowGr.insert();  // Insert the new record into the x_1465873_sifydemo_sify_servicenow table
+            gs.info('Added new employee record with Employee ID ' + current.employee_id + ' to x_1465873_sifydemo_sify_servicenow');
+        }
+    }
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-10 08:10:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ffb37875c3534210907b3f0d05013114</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update Table Data on Change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name>sys_script_ffb37875c3534210907b3f0d05013114</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-10 08:18:18</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=ffb37875c3534210907b3f0d05013114"/>
+</record_update>

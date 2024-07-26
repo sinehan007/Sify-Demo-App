@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access/>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>send_notifications_to_sify_employees</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Sify Employees Record","reference":"x_1465873_sifydemo_sify_employees","reference_display":"Sify Employees","type":"reference","base_type":"reference","usedInstances":{"5bdf5409-6a2d-447d-9e62-85c63c0b84b8":["record"]},"attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Send Notifications to Sify Employees</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:17:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ac3f25bc3970210907b3f0d0501318f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Send Notifications to Sify Employees</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name>sys_hub_flow_7ac3f25bc3970210907b3f0d0501318f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_variable_value action="DELETE" query="document_key=7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=7ac3f25bc3970210907b3f0d0501318f^sys_idNOT INa814f29bc3970210907b3f0d0501310f"/>
+    <sys_hub_trigger_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Send Notifications to Sify Employees">7ac3f25bc3970210907b3f0d0501318f</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:18:44</sys_created_on>
+        <sys_id>a814f29bc3970210907b3f0d0501310f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="DELETE" query="document_key=a814f29bc3970210907b3f0d0501310f"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a814f29bc3970210907b3f0d0501310f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:18:44</sys_created_on>
+        <sys_id>6014f29bc3970210907b3f0d05013111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <value>x_1465873_sifydemo_sify_employees</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a814f29bc3970210907b3f0d0501310f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:18:44</sys_created_on>
+        <sys_id>6814f29bc3970210907b3f0d05013110</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="DELETE" query="flow=7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=7ac3f25bc3970210907b3f0d0501318f^sys_idNOT INf6c3f25bc3970210907b3f0d05013191"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>7ac3f25bc3970210907b3f0d0501318f</id>
+        <name>Send Notifications to Sify Employees</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:17:32</sys_created_on>
+        <sys_id>f6c3f25bc3970210907b3f0d05013191</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:17:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=f6c3f25bc3970210907b3f0d05013191"/>
+    <sys_hub_flow_input action="DELETE" query="model=7ac3f25bc3970210907b3f0d0501318f^sys_idNOT IN14143e5bc3970210907b3f0d05013143,a814f29bc3970210907b3f0d0501310a"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Send Notifications to Sify Employees">7ac3f25bc3970210907b3f0d0501318f</model>
+        <model_id>7ac3f25bc3970210907b3f0d0501318f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_7ac3f25bc3970210907b3f0d0501318f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:18:44</sys_created_on>
+        <sys_id>14143e5bc3970210907b3f0d05013143</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=14143e5bc3970210907b3f0d05013143"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Send Notifications to Sify Employees">7ac3f25bc3970210907b3f0d0501318f</model>
+        <model_id>7ac3f25bc3970210907b3f0d0501318f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_7ac3f25bc3970210907b3f0d0501318f</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:18:44</sys_created_on>
+        <sys_id>a814f29bc3970210907b3f0d0501310a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=a814f29bc3970210907b3f0d0501310a"/>
+    <sys_hub_flow_output action="DELETE" query="model=7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_hub_action_instance action="DELETE" query="flow=7ac3f25bc3970210907b3f0d0501318f^sys_idNOT INa814f29bc3970210907b3f0d05013116"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Send Notifications to Sify Employees">7ac3f25bc3970210907b3f0d0501318f</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:18:44</sys_created_on>
+        <sys_id>a814f29bc3970210907b3f0d05013116</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <ui_id>5bdf5409-6a2d-447d-9e62-85c63c0b84b8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=a814f29bc3970210907b3f0d05013116"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a814f29bc3970210907b3f0d05013116</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:18:44</sys_created_on>
+        <sys_id>2414f29bc3970210907b3f0d05013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <value>x_1465873_sifydemo_sify_employees</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=a814f29bc3970210907b3f0d05013116"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>a814f29bc3970210907b3f0d05013116</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:18:44</sys_created_on>
+        <sys_id>a014f29bc3970210907b3f0d05013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>a814f29bc3970210907b3f0d05013116</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:18:44</sys_created_on>
+        <sys_id>e814f29bc3970210907b3f0d05013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="DELETE" query="instance=a814f29bc3970210907b3f0d05013116"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=a814f29bc3970210907b3f0d05013116"/>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_hub_flow_logic action="DELETE" query="flow=7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_hub_flow_variable action="DELETE" query="model=7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_7ac3f25bc3970210907b3f0d0501318f^sys_idNOT IN2814f29bc3970210907b3f0d05013109,e814f29bc3970210907b3f0d0501310c"/>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7ac3f25bc3970210907b3f0d0501318f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:18:44</sys_created_on>
+        <sys_id>2814f29bc3970210907b3f0d05013109</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7ac3f25bc3970210907b3f0d0501318f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:18:44</sys_created_on>
+        <sys_id>e814f29bc3970210907b3f0d0501310c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=7ac3f25bc3970210907b3f0d0501318f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</application>
+        <file_path/>
+        <instance_id>6ff1973a1b020e1078c7cb7b234bcb40</instance_id>
+        <instance_name>dev269083</instance_name>
+        <name>sys_hub_flow_7ac3f25bc3970210907b3f0d0501318f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access/&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;25000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority/&gt;&lt;generation_source/&gt;&lt;internal_name&gt;send_notifications_to_sify_employees&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Created_1.current","label":"Trigger - Record Created➛Sify Employees Record","reference":"x_1465873_sifydemo_sify_employees","reference_display":"Sify Employees","type":"reference","base_type":"reference","usedInstances":{"5bdf5409-6a2d-447d-9e62-85c63c0b84b8":["record"]},"attributes":{}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;Send Notifications to Sify Employees&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:17:32&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7ac3f25bc3970210907b3f0d0501318f&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Send Notifications to Sify Employees&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo"&gt;0ff9d961c3130210907b3f0d05013100&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SifyDemoApp"&gt;0ff9d961c3130210907b3f0d05013100&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_7ac3f25bc3970210907b3f0d0501318f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:18:44&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=7ac3f25bc3970210907b3f0d0501318f^sys_idNOT INa814f29bc3970210907b3f0d0501310f"/&gt;&lt;sys_hub_trigger_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Send Notifications to Sify Employees"&gt;7ac3f25bc3970210907b3f0d0501318f&lt;/flow&gt;&lt;name&gt;Created&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:18:44&lt;/sys_created_on&gt;&lt;sys_id&gt;a814f29bc3970210907b3f0d0501310f&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:18:44&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created"&gt;798916a0c31322002841b63b12d3ae7c&lt;/trigger_definition&gt;&lt;trigger_inputs/&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a814f29bc3970210907b3f0d0501310f"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;a814f29bc3970210907b3f0d0501310f&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:18:44&lt;/sys_created_on&gt;&lt;sys_id&gt;6014f29bc3970210907b3f0d05013111&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:18:44&lt;/sys_updated_on&gt;&lt;value&gt;x_1465873_sifydemo_sify_employees&lt;/value&gt;&lt;variable display_value="Table"&gt;cfca92e0c31322002841b63b12d3ae00&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;a814f29bc3970210907b3f0d0501310f&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:18:44&lt;/sys_created_on&gt;&lt;sys_id&gt;6814f29bc3970210907b3f0d05013110&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:18:44&lt;/sys_updated_on&gt;&lt;value&gt;^EQ&lt;/value&gt;&lt;variable display_value="Condition"&gt;66aadea0c31322002841b63b12d3aebf&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=7ac3f25bc3970210907b3f0d0501318f^sys_idNOT INf6c3f25bc3970210907b3f0d05013191"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;7ac3f25bc3970210907b3f0d0501318f&lt;/id&gt;&lt;name&gt;Send Notifications to Sify Employees&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:17:32&lt;/sys_created_on&gt;&lt;sys_id&gt;f6c3f25bc3970210907b3f0d05013191&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:17:32&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f6c3f25bc3970210907b3f0d05013191"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=7ac3f25bc3970210907b3f0d0501318f^sys_idNOT IN14143e5bc3970210907b3f0d05013143,a814f29bc3970210907b3f0d0501310a"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Send Notifications to Sify Employees"&gt;7ac3f25bc3970210907b3f0d0501318f&lt;/model&gt;&lt;model_id&gt;7ac3f25bc3970210907b3f0d0501318f&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_7ac3f25bc3970210907b3f0d0501318f&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:18:44&lt;/sys_created_on&gt;&lt;sys_id&gt;14143e5bc3970210907b3f0d05013143&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SifyDemoApp"&gt;0ff9d961c3130210907b3f0d05013100&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:18:44&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=14143e5bc3970210907b3f0d05013143"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Send Notifications to Sify Employees"&gt;7ac3f25bc3970210907b3f0d0501318f&lt;/model&gt;&lt;model_id&gt;7ac3f25bc3970210907b3f0d0501318f&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_7ac3f25bc3970210907b3f0d0501318f&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:18:44&lt;/sys_created_on&gt;&lt;sys_id&gt;a814f29bc3970210907b3f0d0501310a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SifyDemoApp"&gt;0ff9d961c3130210907b3f0d05013100&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:18:44&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a814f29bc3970210907b3f0d0501310a"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=7ac3f25bc3970210907b3f0d0501318f^sys_idNOT INa814f29bc3970210907b3f0d05013116"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Send Notification"&gt;0d8dd9f10f11101051218e8ebc767e27&lt;/action_type&gt;&lt;action_type_parent display_value="Send Notification"&gt;7eda5d710f11101051218e8ebc767ec1&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Send Notifications to Sify Employees"&gt;7ac3f25bc3970210907b3f0d0501318f&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:18:44&lt;/sys_created_on&gt;&lt;sys_id&gt;a814f29bc3970210907b3f0d05013116&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SifyDemoApp"&gt;0ff9d961c3130210907b3f0d05013100&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:18:44&lt;/sys_updated_on&gt;&lt;ui_id&gt;5bdf5409-6a2d-447d-9e62-85c63c0b84b8&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a814f29bc3970210907b3f0d05013116"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;a814f29bc3970210907b3f0d05013116&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:18:44&lt;/sys_created_on&gt;&lt;sys_id&gt;2414f29bc3970210907b3f0d05013119&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:18:44&lt;/sys_updated_on&gt;&lt;value&gt;x_1465873_sifydemo_sify_employees&lt;/value&gt;&lt;variable display_value="Table"&gt;818dd9f10f11101051218e8ebc767e32&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=a814f29bc3970210907b3f0d05013116"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;record&lt;/field&gt;&lt;id&gt;a814f29bc3970210907b3f0d05013116&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:18:44&lt;/sys_created_on&gt;&lt;sys_id&gt;a014f29bc3970210907b3f0d05013119&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:18:44&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27&lt;/table&gt;&lt;value&gt;{{Created_1.current}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;a814f29bc3970210907b3f0d05013116&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:18:44&lt;/sys_created_on&gt;&lt;sys_id&gt;e814f29bc3970210907b3f0d05013118&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:18:44&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=a814f29bc3970210907b3f0d05013116"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=a814f29bc3970210907b3f0d05013116"/&gt;&lt;sys_hub_sub_flow_instance action="delete_multiple" query="flow=7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_hub_flow_logic action="delete_multiple" query="flow=7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7ac3f25bc3970210907b3f0d0501318f^sys_idNOT IN2814f29bc3970210907b3f0d05013109,e814f29bc3970210907b3f0d0501310c"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_7ac3f25bc3970210907b3f0d0501318f&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:18:44&lt;/sys_created_on&gt;&lt;sys_id&gt;2814f29bc3970210907b3f0d05013109&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo"&gt;0ff9d961c3130210907b3f0d05013100&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SifyDemoApp"&gt;0ff9d961c3130210907b3f0d05013100&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:18:44&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_7ac3f25bc3970210907b3f0d0501318f&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-15 09:18:44&lt;/sys_created_on&gt;&lt;sys_id&gt;e814f29bc3970210907b3f0d0501310c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo"&gt;0ff9d961c3130210907b3f0d05013100&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SifyDemoApp"&gt;0ff9d961c3130210907b3f0d05013100&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-15 09:18:44&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=7ac3f25bc3970210907b3f0d0501318f"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1423118158</payload_hash>
+        <record_name>Send Notifications to Sify Employees</record_name>
+        <reverted_from/>
+        <source>cff91169c3130210907b3f0d050131bc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:18:44</sys_created_on>
+        <sys_id>e814f29bc3970210907b3f0d05013127</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190b5aff02e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:18:44</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>a014f29ba49702100673d96ac46a0627</update_guid>
+        <update_guid_history>a014f29ba49702100673d96ac46a0627:-1423118158,c3c33e5b7b9702103db4182bc1bfff55:1754839748</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 09:30:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>5fb1fd668b3d41c4be3331cd4f2f8190</sys_id>
+        <sys_metadata>7ac3f25bc3970210907b3f0d0501318f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send Notifications to Sify Employees</sys_name>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_scope_delete display_value="">5ee7f05c72474240aac9ae0b568f3b44</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_7ac3f25bc3970210907b3f0d0501318f</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_7ac3f25bc3970210907b3f0d0501318f">e814f29bc3970210907b3f0d05013127</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 09:30:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

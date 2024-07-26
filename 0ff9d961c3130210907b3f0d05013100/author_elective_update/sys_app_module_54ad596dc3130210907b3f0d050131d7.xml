@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="SifyDemoApp">44ad91e9c3130210907b3f0d050131d6</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>All</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1465873_sifydemo_demo_table</name>
+        <order>3</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-09 16:31:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>54ad596dc3130210907b3f0d050131d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name>sys_app_module_54ad596dc3130210907b3f0d050131d7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-09 16:31:42</sys_updated_on>
+        <timeline_page/>
+        <title>All</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</application>
+        <file_path/>
+        <instance_id>6ff1973a1b020e1078c7cb7b234bcb40</instance_id>
+        <instance_name>dev269083</instance_name>
+        <name>sys_app_module_54ad596dc3130210907b3f0d050131d7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="SifyDemoApp">44ad91e9c3130210907b3f0d050131d6</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>All</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1465873_sifydemo_demo_table</name><order>3</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-09 16:31:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>54ad596dc3130210907b3f0d050131d7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>All</sys_name><sys_overrides/><sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package><sys_policy/><sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope><sys_update_name>sys_app_module_54ad596dc3130210907b3f0d050131d7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-09 16:31:42</sys_updated_on><timeline_page/><title>All</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1437117289</payload_hash>
+        <record_name>All</record_name>
+        <reverted_from/>
+        <source>cff91169c3130210907b3f0d050131bc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-09 16:31:42</sys_created_on>
+        <sys_id>90ad596dc3130210907b3f0d050131d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19098562a430000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-09 16:31:42</sys_updated_on>
+        <type>Module</type>
+        <update_guid>94ad596d5b1302108fb65034e62e0fd8</update_guid>
+        <update_guid_history>94ad596d5b1302108fb65034e62e0fd8:-1437117289</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="All">c929dc71c3df0210907b3f0d050131f5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-10 06:10:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>2f9f2501d1c54eb88f91eefcb98d2c40</sys_id>
+        <sys_metadata>54ad596dc3130210907b3f0d050131d7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All</sys_name>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_scope_delete display_value="">5ee7f05c72474240aac9ae0b568f3b44</sys_scope_delete>
+        <sys_update_name>sys_app_module_54ad596dc3130210907b3f0d050131d7</sys_update_name>
+        <sys_update_version display_value="sys_app_module_54ad596dc3130210907b3f0d050131d7">90ad596dc3130210907b3f0d050131d9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-10 06:10:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

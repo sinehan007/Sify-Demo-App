@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item">
+    <sys_sg_write_back_action_item action="DELETE">
+        <description/>
+        <execution_script/>
+        <name>New (demo_table)</name>
+        <parameter_screen/>
+        <query_condition table="x_1465873_sifydemo_demo_table">sys_idSTARTSWITH{{demo_table sys_id}}^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="STARTSWITH" or="false" value="{{demo_table sys_id}}"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </query_condition>
+        <sys_class_name>sys_sg_write_back_action_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-09 16:32:06</sys_created_on>
+        <sys_id>c2bdd96dc3130210907b3f0d050131ed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>New (demo_table)</sys_name>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name>sys_sg_write_back_action_item_c2bdd96dc3130210907b3f0d050131ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-09 16:32:06</sys_updated_on>
+        <table>x_1465873_sifydemo_demo_table</table>
+        <template>age={{demo_table age}}^email={{demo_table email}}^gender={{demo_table gender}}^name={{demo_table name}}^number={{demo_table number}}^phone_number={{demo_table phone_number}}^EQ</template>
+        <type>new</type>
+        <use_current_record_as_condition>false</use_current_record_as_condition>
+        <use_fields_for_ref_lookup>false</use_fields_for_ref_lookup>
+    </sys_sg_write_back_action_item>
+    <sys_translated_text action="DELETE" query="documentkey=c2bdd96dc3130210907b3f0d050131ed"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</application>
+        <file_path/>
+        <instance_id>6ff1973a1b020e1078c7cb7b234bcb40</instance_id>
+        <instance_name>dev269083</instance_name>
+        <name>sys_sg_write_back_action_item_c2bdd96dc3130210907b3f0d050131ed</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_write_back_action_item"><sys_sg_write_back_action_item action="INSERT_OR_UPDATE"><description/><execution_script/><name>New (demo_table)</name><parameter_screen/><query_condition table="x_1465873_sifydemo_demo_table">sys_idSTARTSWITH{{demo_table sys_id}}^EQ<item endquery="false" field="sys_id" goto="false" newquery="false" operator="STARTSWITH" or="false" value="{{demo_table sys_id}}"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></query_condition><sys_class_name>sys_sg_write_back_action_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-09 16:32:06</sys_created_on><sys_id>c2bdd96dc3130210907b3f0d050131ed</sys_id><sys_mod_count>1</sys_mod_count><sys_name>New (demo_table)</sys_name><sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package><sys_policy/><sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope><sys_update_name>sys_sg_write_back_action_item_c2bdd96dc3130210907b3f0d050131ed</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-09 16:32:06</sys_updated_on><table>x_1465873_sifydemo_demo_table</table><template>age={{demo_table age}}^email={{demo_table email}}^gender={{demo_table gender}}^name={{demo_table name}}^number={{demo_table number}}^phone_number={{demo_table phone_number}}^EQ</template><type>new</type><use_current_record_as_condition>false</use_current_record_as_condition><use_fields_for_ref_lookup>false</use_fields_for_ref_lookup></sys_sg_write_back_action_item><sys_translated_text action="delete_multiple" query="documentkey=c2bdd96dc3130210907b3f0d050131ed"/></record_update>]]></payload>
+        <payload_hash>-1453678860</payload_hash>
+        <record_name>New (demo_table)</record_name>
+        <reverted_from/>
+        <source>cff91169c3130210907b3f0d050131bc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-09 16:32:07</sys_created_on>
+        <sys_id>1ebd1d6dc3130210907b3f0d05013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19098568cb70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-09 16:32:07</sys_updated_on>
+        <type>Action item</type>
+        <update_guid>52bd1d6daa13021027935e870d25b445</update_guid>
+        <update_guid_history>52bd1d6daa13021027935e870d25b445:-1453678860</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-10 06:10:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_write_back_action_item">sys_sg_write_back_action_item</sys_db_object>
+        <sys_id>19083174744641cb9ccfe04255765ff9</sys_id>
+        <sys_metadata>c2bdd96dc3130210907b3f0d050131ed</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New (demo_table)</sys_name>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_scope_delete display_value="">5ee7f05c72474240aac9ae0b568f3b44</sys_scope_delete>
+        <sys_update_name>sys_sg_write_back_action_item_c2bdd96dc3130210907b3f0d050131ed</sys_update_name>
+        <sys_update_version display_value="sys_sg_write_back_action_item_c2bdd96dc3130210907b3f0d050131ed">1ebd1d6dc3130210907b3f0d05013145</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-10 06:10:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

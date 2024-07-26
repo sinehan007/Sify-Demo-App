@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1465873_sifydemo_demo_table</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-09 16:31:12</sys_created_on>
+        <sys_id>c18dd56dc3130210907b3f0d05013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1465873_sifydemo_demo_table</sys_name>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name>sys_security_acl_c18dd56dc3130210907b3f0d05013146</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-09 16:31:12</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</application>
+        <file_path/>
+        <instance_id>6ff1973a1b020e1078c7cb7b234bcb40</instance_id>
+        <instance_name>dev269083</instance_name>
+        <name>sys_security_acl_c18dd56dc3130210907b3f0d05013146</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>true</advanced><condition/><description/><local_or_existing>Local</local_or_existing><name>x_1465873_sifydemo_demo_table</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-09 16:31:12</sys_created_on><sys_id>c18dd56dc3130210907b3f0d05013146</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1465873_sifydemo_demo_table</sys_name><sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package><sys_policy/><sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope><sys_update_name>sys_security_acl_c18dd56dc3130210907b3f0d05013146</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-09 16:31:12</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-1638952572</payload_hash>
+        <record_name>x_1465873_sifydemo_demo_table</record_name>
+        <reverted_from/>
+        <source>cff91169c3130210907b3f0d050131bc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-09 16:31:12</sys_created_on>
+        <sys_id>c58dd56dc3130210907b3f0d05013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1909855b7ca0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-09 16:31:12</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>c98dd56d1013021025b4f9bc2a8a7747</update_guid>
+        <update_guid_history>c98dd56d1013021025b4f9bc2a8a7747:-1638952572</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-10 06:10:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>432c7a15c08644ecacb22a466920ebe1</sys_id>
+        <sys_metadata>c18dd56dc3130210907b3f0d05013146</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1465873_sifydemo_demo_table</sys_name>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_parent display_value="">eb7d556dc3130210907b3f0d050131e2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_scope_delete display_value="">5ee7f05c72474240aac9ae0b568f3b44</sys_scope_delete>
+        <sys_update_name>sys_security_acl_c18dd56dc3130210907b3f0d05013146</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_c18dd56dc3130210907b3f0d05013146">c58dd56dc3130210907b3f0d05013148</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-10 06:10:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

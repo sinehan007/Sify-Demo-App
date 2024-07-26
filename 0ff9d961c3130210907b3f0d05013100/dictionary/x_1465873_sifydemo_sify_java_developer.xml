@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1d343a56c31f4210907b3f0d050131d7" label="Sify Java Developer" max_length="40" name="x_1465873_sifydemo_sify_java_developer" type="collection">
+        <element label="Email" max_length="50" name="email" reference="x_1465873_sifydemo_sify_employees" type="string"/>
+        <element label="Name" max_length="50" name="name" reference="x_1465873_sifydemo_sify_employees" type="string"/>
+        <element display="true" label="Employee ID" max_length="50" name="employee_id" reference="x_1465873_sifydemo_sify_employees" type="string"/>
+    </element>
+</database>

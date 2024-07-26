@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1465873_sifydemo.SifyEmployeeTest</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>SifyEmployeeTest</name>
+        <script><![CDATA[var SifyEmployeeTest = Class.create();
+SifyEmployeeTest.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getEmployee: function() {
+		var employee_id = this.getParameter('sysparm_employee_id');
+        var gr = new GlideRecord('x_1465873_sifydemo_sify_employees');
+        gr.addQuery('employee_id', employee_id);
+        gr.query();
+        if (gr.next()) {
+			var result = {
+                name: gr.getValue('name'),
+                gender: gr.getValue('gender'),
+                email: gr.getValue('email'),
+                designation: gr.getValue('designation'),
+                dateOfBirth: gr.getValue('date_of_birth'),
+                age: gr.getValue('age')
+            };
+			gs.info(result);
+        return JSON.stringify(result);  
+        } else {
+            gs.info('No employee found with employee_id: ' + employeeId);
+            return JSON.stringify({ error: 'Employee not found' });
+        }
+    },
+    type: 'SifyEmployeeTest'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-11 09:07:23</sys_created_on>
+        <sys_id>ea6a0acac3570210907b3f0d050131b0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>SifyEmployeeTest</sys_name>
+        <sys_package display_value="SifyDemoApp" source="x_1465873_sifydemo">0ff9d961c3130210907b3f0d05013100</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SifyDemoApp">0ff9d961c3130210907b3f0d05013100</sys_scope>
+        <sys_update_name>sys_script_include_ea6a0acac3570210907b3f0d050131b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-11 09:22:44</sys_updated_on>
+    </sys_script_include>
+</record_update>
